@@ -59,8 +59,8 @@ add the Following code to the &lt;head&gt; of your document.
 ```html
 <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/lightslider.js"></script>
-    // Do not include both lightslider.js and lightslider.min.js
+<script src="js/lightslider-min-page.js"></script>
+    // Do not include both lightslider-min-page.js and lightslider.min.js
 ```
 ### HTML Structure ###
 ```html

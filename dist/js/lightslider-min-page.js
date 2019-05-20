@@ -1,3 +1,6 @@
+/*! lightslider-min-page - v1.1.6 - 2019-05-20
+* https://github.com/sachinchoolur/lightslider
+* Copyright (c) 2019 ; Licensed MIT */
 (function ($, undefined) {
     'use strict';
     var defaults = {
@@ -35,6 +38,7 @@
         enableDrag: true,
         freeMove: true,
         swipeThreshold: 40,
+        minThumbPage: 1,
         responsive: [],
         /* jshint ignore:start */
         onBeforeStart: function ($el) {},
@@ -362,7 +366,7 @@
                         if (settings.mode === 'slide') {
                             if ((v) >= w - elSize - settings.slideMargin) {
                                 i = i + 1;
-                                var minPgr = 2;
+                                var minPgr = settings.minThumbPage;
                                 if (settings.autoWidth) {
                                     pagers += '<li><a href="#">' + (i + 1) + '</a></li>';
                                     minPgr = 1;
